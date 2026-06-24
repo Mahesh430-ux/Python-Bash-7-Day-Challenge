@@ -114,3 +114,4 @@ print(not True)
 Output:False 
 
 
+6 Type converison :- 
