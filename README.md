@@ -111,6 +111,4 @@ Output:True
 NOT
 print(not True)
 
-Output:False 
-
-
+Output:False
