@@ -53,4 +53,64 @@ output :- 7
 output : 3528
 
 
+4.4  Division :
+print(a / b)
+
+Output: 2.0
+
+
+4.5 Modulus (%)  :- Returns remainder and Useful for checking even/odd numbers. 
+
+print(10 % 3)
+
+Output: 1 
+
+
+
+5 Comparison Operators :- 
+
+Used for comparisons
+
+Equal To
+print(10 == 10)
+
+Output: True 
+
+
+Not Equal
+print(10 != 5)
+
+Output: True 
+
+
+Greater Than
+print(20 > 10)
+
+Output: Tree 
+
+
+Less Than
+print(5 < 10)
+
+Output: True 
+
+
+Logical Operators
+AND
+print(True and True)
+
+Output: True 
+
+
+OR
+print(True or False)
+
+Output:True 
+
+
+NOT
+print(not True)
+
+Output:False 
+
 
