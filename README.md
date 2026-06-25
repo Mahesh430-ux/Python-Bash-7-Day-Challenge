@@ -67,48 +67,61 @@ Output: 1
 
 
 
-5 Comparison Operators :- 
+5 Comparison Operators :- Used for comparisons between two numbers 
 
-Used for comparisons
 
-Equal To
+5.1 Equal To :- 
 print(10 == 10)
 
 Output: True 
 
 
-Not Equal
+5.2 Not Equal
 print(10 != 5)
 
 Output: True 
 
 
-Greater Than
+5.3 Greater Than
 print(20 > 10)
 
-Output: Tree 
+Output: True 
 
 
-Less Than
+5.4 Less Than
 print(5 < 10)
 
 Output: True 
 
 
-Logical Operators
-AND
+6 Logical Operators :- logical operators operates the code logically it means that whether the code is logically coreect or not 
+6.1 AND
 print(True and True)
 
 Output: True 
 
 
-OR
+6.2 OR
 print(True or False)
 
 Output:True 
 
 
-NOT
-print(not True)
+6.3 NOT
+print(not True) 
 
-Output:False
+7 Type conversion :-  Type converison changes on data type to another so why it is needed ? because input always return a string 
+
+7.1 convert string into integer :-
+example : age =int(input("Enter Age :" )) 
+output:- 19 is stored as an integer 
+
+7.2 convert string to float 
+example :- price = float(input("Enter Price: "))
+input 99.99 
+output 99.99 
+
+7.3 convert number to string :- 
+example :- age = 19
+print("Age is" +str(age) )
+output :- Age is 19 
