@@ -125,3 +125,111 @@ output 99.99
 example :- age = 19
 print("Age is" +str(age) )
 output :- Age is 19 
+
+Day 2 :-Python Control Flow(Conditions & Loops)
+
+1) comparsion operators :- 
+1.1 Equal to (==)
+1.2 != (Not equal to)
+1.3 > (Greater than)
+1.4 < (Less than)
+1.5 >= (Greater than or equal to)
+1.6 <= (Less than or equal to)
+
+Example of all :
+age  =int(input("Enter your age : 3"))
+if age ==18:
+    print("You are eligible to vote and for applying for a driving license")
+elif age >=18:
+    print("You are eligible to apply for voting ")
+elif age <= 18:
+    print("You are not eligible to vote")
+elif age > 21:
+    print("You are eligible to drive")
+elif age < 21:
+    print("You are not eligible to drive")
+
+
+2.Logical Operators:- Logical operators combine two or more conditions into a single expression. They are useful when making complex decisions.
+
+Types of Logical Operators
+
+2.1 AND :- Returns True only if both conditions are true.
+
+example :- 
+age = 20
+has_id = True
+
+print(age >= 18 and has_id)
+
+Output :-true
+
+2.2 OR 
+
+Returns True if **at least one condition** is true.
+
+python
+print(True or False)
+
+
+Output  :- true 
+
+
+2.3 NOT :- Reverse the result of a condition.
+example :-  
+print(not True)
+
+Output:- False
+
+3. Conditional Statements :- Conditional statements allow a program to make decisions based on conditions.
+
+
+
+3.1 if Statement :-Executes a block of code only if the condition is true.
+
+age = 20
+
+if age >= 18:
+    print("Eligible to Vote")
+
+Output :- Eligible to Vote
+
+
+3.2 if...else Statement :- Executes one block if the condition is true and another block if it is false.
+
+age = 15
+
+if age >= 18:
+    print("Eligible")
+else:
+    print("Not Eligible")
+
+Output :- Not Eligible
+
+
+3.3 if...elif...else Statement :-Checks multiple conditions in order.
+
+example :- 
+
+marks = 82
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 60:
+    print("Grade C")
+else:
+    print("Grade D")
+
+Output :- Grade B
+
+3.4. for Loop :- A for loop repeats a block of code for each item in a sequence or for a specified number of times.
+
+example :-
+for i in range(1, 6):
+    print(i)
+
+
+Output
+1 2 3 4 5 
