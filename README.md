@@ -533,3 +533,189 @@ else:
 
 
 
+
+
+🐍 Day 4: Python Loops :- 
+
+Topics to Cover
+
+1. What is a Loop?
+
+Definition: A loop is used to execute a block of code repeatedly until a condition is met.
+
+Example:
+
+for i in range(5):
+    print(i)
+
+Output
+
+0
+1
+2
+3
+4
+
+
+---
+
+2. for Loop
+
+Definition: A for loop iterates over a sequence such as a list, tuple, string, or range.
+
+Syntax
+
+for variable in sequence:
+    # code
+
+Example
+
+fruits = ["Apple", "Banana", "Mango"]
+
+for fruit in fruits:
+    print(fruit)
+
+
+---
+
+3. range() Function
+
+Definition: The range() function generates a sequence of numbers.
+
+Examples
+
+for i in range(5):
+    print(i)
+
+for i in range(2, 8):
+    print(i)
+
+for i in range(1, 11, 2):
+    print(i)
+
+
+---
+
+4. while Loop
+
+Definition: A while loop executes as long as the given condition is True.
+
+Example
+
+count = 1
+
+while count <= 5:
+    print(count)
+    count += 1
+
+
+---
+
+5. Infinite Loop
+
+Definition: An infinite loop occurs when the loop condition never becomes False.
+
+Example
+
+while True:
+    print("Hello")
+
+> ⚠️ Stop the program manually using Ctrl + C.
+
+
+
+
+---
+
+6. break
+
+Definition: The break statement immediately exits the loop.
+
+Example
+
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+
+
+---
+
+7. continue
+
+Definition: The continue statement skips the current iteration and moves to the next one.
+
+Example
+
+for i in range(6):
+    if i == 3:
+        continue
+    print(i)
+
+
+---
+
+8. pass
+
+Definition: The pass statement is a placeholder that does nothing.
+
+Example
+
+for i in range(5):
+    if i == 2:
+        pass
+    print(i)
+
+
+---
+
+9. Nested Loops
+
+Definition: A loop inside another loop is called a nested loop.
+
+Example
+
+for i in range(3):
+    for j in range(3):
+        print(i, j)
+
+
+---
+
+💻 Practice Programs
+
+1. Print numbers from 1 to 20.
+solution :- for i in range(20)
+print(i)
+
+
+2. Print even numbers from 1 to 50.
+for i in range(50):
+    str =int(input("Enter a number :"))
+    if i % 2== 0:
+        print("The number is even : {i}")
+    else:
+        print(" the number is odd :  {i}")
+
+
+3. Print odd numbers from 1 to 50.
+
+for number in range(1, 21):
+    if number % 2 == 1:
+        print(number)
+
+
+4. Calculate the sum of numbers from 1 to 100.
+
+total = 0;
+for number in range (1 , 100):
+    total = total + number 
+print (" sum =" , total)
+
+5. Print the multiplication table of any number.
+
+number = int(input("Enter a number: "))
+
+for i in range(1, 11):
+    print(number, "x", i, "=", number * i)
+
