@@ -719,3 +719,478 @@ number = int(input("Enter a number: "))
 for i in range(1, 11):
     print(number, "x", i, "=", number * i)
 
+Great idea. Since you're posting this on GitHub, it's better to explain **every List method** with its definition, syntax, example, and output. This makes your Day 5 repository much more valuable.
+
+
+🐍 Day 5: Python Lists
+
+ 📌 5.1 What is a List?
+
+A List is an ordered, mutable (changeable) collection that can store multiple items of different data types.
+
+ Features
+
+* ✅ Ordered
+* ✅ Mutable
+* ✅ Allows duplicate values
+* ✅ Supports indexing and slicing
+* ✅ Can contain different data types
+
+---
+
+ Creating a List :- 
+ Example
+
+python
+fruits = ["Apple", "Mango", "Orange", "Banana"]
+
+print(fruits)
+
+ Output :- 
+```
+['Apple', 'Mango', 'Orange', 'Banana']
+```
+
+5.2 Indexing :- 
+
+Lists start from 0.
+
+python
+fruits = ["Apple", "Mango", "Orange", "Banana"]
+
+print(fruits[0])
+
+print(fruits[2])
+
+print(fruits[-1])
+
+
+ Output :- 
+
+
+Apple
+Orange
+Banana
+
+
+
+
+ 5.3 Slicing
+
+python
+numbers = [10,20,30,40,50]
+
+print(numbers[1:4])
+
+print(numbers[:3])
+
+print(numbers[2:])
+
+
+ Output
+
+
+[20,30,40]
+[10,20,30]
+[30,40,50]
+
+
+
+ ⭐ List Methods
+
+---
+
+1. append()
+
+Definition :- 
+
+Adds one item mto the end of the list.
+
+ Syntax :- 
+
+python
+list.append(item)
+
+
+ Example
+
+python
+languages = ["Python","Java"]
+
+languages.append("Go")
+
+print(languages)
+
+
+ Output :- 
+
+
+['Python', 'Java', 'Go']
+
+
+---
+
+2. insert()
+
+ Definition :-- 
+
+Inserts an element at a specified position.
+
+Syntax :- 
+
+python
+list.insert(index, item)
+
+
+ Example :-
+
+python
+languages = ["Python","Java"]
+
+languages.insert(1,"C++")
+
+print(languages)
+
+ Output :-
+
+
+['Python', 'C++', 'Java']
+
+
+3. extend()
+
+ Defination :- 
+
+Adds all elements from another iterable (such as a list or tuple) to the end of the list.
+
+ Syntax
+
+python
+list.extend(iterable)
+
+
+ Example :- 
+
+python
+numbers = [1,2,3]
+
+numbers.extend([4,5,6])
+
+print(numbers)
+
+
+ Output
+
+[1,2,3,4,5,6]
+
+
+
+
+ 4. remove()
+
+ Definition
+
+Removes the **first occurrence** of the specified value.
+
+ Syntax
+
+python
+list.remove(value)
+
+
+ Example
+
+python
+fruits = ["Apple","Mango","Orange"]
+
+fruits.remove("Mango")
+
+print(fruits)
+
+
+ Output
+
+
+['Apple', 'Orange']
+
+
+
+
+ 5. pop()
+
+ Definition :- 
+
+Removes and returns an item at the specified index. If no index is given, it removes the last item.
+
+ Syntax
+
+python
+list.pop(index)
+
+
+ Example :- 
+
+python
+numbers = [10,20,30,40]
+
+numbers.pop()
+
+print(numbers)
+
+
+ Output
+
+
+[10,20,30]
+
+
+6 . Pop by Index
+
+
+numbers = [10,20,30,40]
+
+numbers.pop(1)
+
+print(numbers)
+
+
+ Output
+
+
+[10,30,40]
+
+
+
+
+ 6. clear()
+
+Definition ;- 
+
+Removes all items from the list.
+
+ Example
+
+
+numbers = [1,2,3]
+
+numbers.clear()
+
+print(numbers)
+
+
+ Output : []
+
+---
+
+7. index()
+
+ Definition :- 
+
+Returns the index of the first occurrence of a value.
+
+ Example
+
+
+fruits = ["Apple","Mango","Orange"]
+
+print(fruits.index("Orange"))
+
+
+ Output :- 2
+
+
+2
+
+
+
+ 8. count()
+
+ Definition :- 
+
+Counts how many times a value appears in the list.
+
+Example
+
+numbers = [1,2,2,3,2]
+
+print(numbers.count(2))
+
+
+ Output
+
+
+3
+
+
+
+
+ 9. sort()
+
+ Definition :- 
+
+Sorts the list in ascending order by default.
+
+ Example :- 
+
+
+numbers = [5,2,8,1]
+
+numbers.sort()
+
+print(numbers)
+
+ Output
+
+
+[1,2,5,8]
+
+
+
+ Descending Order
+
+python
+numbers = [5,2,8,1]
+
+numbers.sort(reverse=True)
+
+print(numbers)
+
+ Output:- 
+
+
+[8,5,2,1]
+
+
+
+
+ 10. reverse()
+
+ Definition :-
+
+Reverses the order of the list.
+
+ Example :- 
+
+numbers = [1,2,3,4]
+
+numbers.reverse()
+
+print(numbers)
+
+
+ Output :-
+
+[4,3,2,1]
+
+
+ 11. copy()
+
+ Definition
+
+Creates a shallow copy of the list.
+
+ Example
+
+
+list1 = [10,20,30]
+
+list2 = list1.copy()
+
+print(list2)
+
+
+ Output :-
+
+
+[10,20,30]
+
+# ⭐ Built-in Functions Used with Lists
+
+ len()
+
+Returns the number of elements.
+
+```python
+fruits = ["Apple","Mango","Orange"]
+
+print(len(fruits))
+
+Output :- 3  
+
+
+max()
+
+Returns the largest value.
+
+
+numbers = [5,10,20]
+
+print(max(numbers))
+
+
+Output
+
+
+20
+
+
+
+ min()
+
+Returns the smallest value.
+
+
+numbers = [5,10,20]
+
+print(min(numbers))
+
+
+Output :- 5 
+
+
+sum()
+
+Returns the total of all numbers.
+
+
+numbers = [10,20,30]
+
+print(sum(numbers))
+
+
+Output
+
+
+60
+
+ sorted()
+
+Returns a new sorted list without modifying the original.
+
+numbers = [5,2,8,1]
+
+print(sorted(numbers))
+
+print(numbers)
+
+
+Output
+
+
+[1,2,5,8]
+[5,2,8,1]
+```
+
+
+
+# List vs Tuple
+
+| Feature     | List            | Tuple  |
+| ----------- | --------------- | ------ |
+| Mutable     | ✅ Yes           | ❌ No   |
+| Ordered     | ✅ Yes           | ✅ Yes  |
+| Duplicates  | ✅ Yes           | ✅ Yes  |
+| Indexing    | ✅ Yes           | ✅ Yes  |
+| Performance | Slightly slower | Faster |
+
+
