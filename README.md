@@ -1189,7 +1189,7 @@ Output
 
 
 
- Day 5: Python Collections (Lists, Tuples, Sets & Dictionaries)
+ Day 6: Python Collections (Lists, Tuples, Sets & Dictionaries)
 
 
 
