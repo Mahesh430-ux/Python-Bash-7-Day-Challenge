@@ -620,13 +620,6 @@ Example
 while True:
     print("Hello")
 
-> ⚠️ Stop the program manually using Ctrl + C.
-
-
-
-
----
-
 6. break
 
 Definition: The break statement immediately exits the loop.
@@ -1192,5 +1185,568 @@ Output
 | Duplicates  | ✅ Yes           | ✅ Yes  |
 | Indexing    | ✅ Yes           | ✅ Yes  |
 | Performance | Slightly slower | Faster |
+
+
+
+
+ Day 5: Python Collections (Lists, Tuples, Sets & Dictionaries)
+
+
+
+
+
+1️⃣ List
+
+Definition :- 
+A List is an ordered, mutable (changeable) collection that allows duplicate values.
+
+✅ Features
+
+* Ordered
+* Mutable
+* Allows duplicates
+* Can store different data types
+
+ Syntax
+
+fruits = ["Apple", "Banana", "Mango"]
+
+
+Example :- 
+
+
+fruits = ["Apple", "Banana", "Mango"]
+
+print(fruits)
+print(fruits[0])
+
+
+Output
+
+
+['Apple', 'Banana', 'Mango']
+Apple
+
+
+
+ List Methods
+
+
+1.1 append()
+
+Adds an item at the end.
+
+
+fruits = ["Apple", "Banana"]
+
+fruits.append("Orange")
+
+print(fruits)
+
+
+Output  :- 
+['Apple', 'Banana', 'Orange']
+
+
+
+
+1.2 insert()
+
+Adds an item at a specific position.
+
+
+fruits = ["Apple", "Banana"]
+
+fruits.insert(1, "Mango")
+
+print(fruits)
+
+
+Output :- 
+
+
+['Apple', 'Mango', 'Banana']
+
+
+
+
+1.4  extend()
+
+Adds multiple items.
+
+
+numbers = [1, 2]
+
+numbers.extend([3, 4, 5])
+
+print(numbers)
+
+
+Output :- 
+[1, 2, 3, 4, 5]
+
+
+1.5 remove()
+
+Removes a specific value.
+
+
+fruits = ["Apple", "Banana", "Mango"]
+
+fruits.remove("Banana")
+
+print(fruits)
+
+
+Output :-
+['Apple', 'Mango']
+
+
+
+
+1.6 pop()
+
+Removes an item using its index.
+
+numbers = [10, 20, 30]
+
+numbers.pop(1)
+
+print(numbers)
+
+
+Output :- 
+
+
+[10, 30]
+
+
+
+
+1.6 clear()
+
+Removes everything.
+
+
+numbers = [1,2,3]
+
+numbers.clear()
+
+print(numbers)
+
+
+Output :- 
+
+
+[]
+
+
+
+
+1.7 index()
+
+Returns the position.
+
+
+fruits = ["Apple", "Banana", "Mango"]
+
+print(fruits.index("Banana"))
+
+
+Output :- 1 
+
+
+1.8 count()
+
+Counts occurrences.
+
+
+numbers = [1,2,2,3,2]
+
+print(numbers.count(2))
+
+Output :- 3
+
+
+1.9  sort()
+
+Sorts the list.
+
+numbers = [5,1,8,2]
+
+numbers.sort()
+
+print(numbers)
+
+
+Output
+
+
+[1,2,5,8]
+
+
+
+1.10 reverse()
+
+Reverses the list.
+
+
+numbers = [1,2,3]
+
+numbers.reverse()
+
+print(numbers)
+
+
+Output :- 
+[3,2,1]
+
+
+
+
+1.11 copy()
+
+Creates another list.
+
+
+a = [1,2,3]
+
+b = a.copy()
+
+print(b)
+
+Output :-
+
+
+[1,2,3]
+
+
+
+
+2️⃣ Tuple :- 
+
+Definition :- 
+
+A Tuple is an ordered but immutable collection.
+
+ Features :-
+
+* Ordered
+* Immutable
+* Allows duplicates
+* Faster than lists
+
+ Syntax :- 
+
+python
+student = ("Mahesh", 19, "India")
+
+
+ Example :- 
+
+
+student = ("Mahesh", 19)
+
+print(student)
+print(student[0])
+
+
+Output :- 
+('Mahesh', 19)
+Mahesh
+
+
+
+
+2 Tuple Methods
+
+Only two methods exist.
+
+2.2 count()
+
+
+numbers = (1,2,2,3)
+
+print(numbers.count(2))
+
+
+Output :- 2 
+
+2.3 index()
+
+
+numbers = (10,20,30)
+
+print(numbers.index(20))
+
+
+Output
+
+
+1
+
+
+
+
+3️⃣ Set
+
+ Definition :- 
+
+A Set is an unordered collection that stores only unique values.
+
+ Features :- 
+
+* Unordered
+* Mutable
+* No duplicates
+* Fast searching
+
+ Syntax :- 
+
+
+numbers = {1,2,3}
+
+
+ Example :- 
+
+numbers = {1,2,2,3}
+
+print(numbers)
+
+
+Output :-
+{1,2,3}
+
+
+
+
+* Set Methods
+
+
+3.1 add()
+
+
+numbers = {1,2}
+
+numbers.add(3)
+
+print(numbers)
+
+
+
+
+3.2 update()
+
+
+numbers = {1,2}
+
+numbers.update([3,4])
+
+print(numbers)
+
+
+
+
+3.3 remove()
+
+
+numbers = {1,2,3}
+
+numbers.remove(2)
+
+print(numbers)
+
+
+
+
+3.4 discard()
+
+Doesn't show an error if the item isn't found.
+
+
+numbers = {1,2,3}
+
+numbers.discard(5)
+
+print(numbers)
+
+
+
+3.5 pop()
+Removes a random item.
+
+numbers = {10,20,30}
+
+numbers.pop()
+
+print(numbers)
+
+
+
+
+ clear()
+
+
+numbers = {1,2,3}
+
+numbers.clear()
+
+print(numbers)
+
+
+
+* Set Operations
+
+4.1 Union
+
+
+a = {1,2,3}
+
+b = {3,4,5}
+
+print(a | b)
+
+
+Output :- 
+
+{1,2,3,4,5}
+
+
+
+
+4.2 Intersection
+
+print(a & b)
+
+
+Output :- {3}
+
+ 4.3 Difference :- 
+print(a - b)
+
+Output :- 
+
+{1,2}
+
+
+
+
+5 4️⃣ Dictionary
+
+Definition :- 
+
+A Dictionary stores data as **key-value pairs**.
+
+ Features :- 
+
+* Ordered
+* Mutable
+* Unique keys
+* Fast lookup
+
+ Syntax :- 
+
+
+student = {
+    "name": "Mahesh",
+    "age": 19
+}
+
+
+ Example :- 
+student = {
+    "name": "Mahesh",
+    "age": 19
+}
+
+print(student["name"])
+
+Output :- 
+Mahesh
+
+
+* Dictionary Methods
+
+
+
+5.1 get()
+
+
+student = {"name":"Mahesh"}
+
+print(student.get("name"))
+
+
+
+
+5.2 keys()
+student = {"name":"Mahesh","age":19}
+
+print(student.keys())
+
+
+
+
+5.3 values()
+print(student.values())
+
+5.4  items()
+
+
+print(student.items())
+
+
+
+
+5.5 update()
+
+
+student = {"name":"Mahesh"}
+
+student.update({"age":19})
+
+print(student)
+
+5.6 pop()
+
+example :- 
+student = {"name":"Mahesh","age":19}
+
+student.pop("age")
+
+print(student)
+
+ popitem()
+
+Removes the last inserted item.
+
+
+student = {"name":"Mahesh","age":19}
+
+student.popitem()
+
+print(student)
+
+
+clear()
+
+
+student.clear()
+
+print(student)
+
+
+
+
+# 🔥 Comparison Table
+
+| Feature    | List                | Tuple      | Set           | Dictionary       |
+| ---------- | ------------------- | ---------- | ------------- | ---------------- |
+| Ordered    | ✅                   | ✅          | ❌             | ✅                |
+| Mutable    | ✅                   | ❌          | ✅             | ✅                |
+| Duplicates | ✅                   | ✅          | ❌             | Keys ❌, Values ✅ |
+| Indexed    | ✅                   | ✅          | ❌             | By Key           |
+| Use Case   | Dynamic collections | Fixed data | Unique values | Key-value data   |
+
 
 
