@@ -1750,3 +1750,220 @@ print(student)
 
 
 
+Day 6 :- PYTHON FUNCTIONS :-
+
+Functions are reusable blocks of code that perform a specific task. Instead of writing the same code multiple times, we create a function once and call it whenever needed.
+
+syntax :- 
+def function_name():
+    # code block 
+
+
+example :-  def greet():
+print ("Hello , Mahesh !")
+
+greet()
+
+output :- Hello ,Mahesh!
+
+* Why use functions  :-
+1 reuse code 
+2 Make programs cleaner 
+3 Easier to debug
+4 Easier to mantain 
+
+* Creating a function:- 
+def welcome ():
+print("Welcome to python!")
+
+* functions with paramters :- 
+def greet(name):
+print("Hello" , name)
+
+greet("Mahesh")
+
+output :- Hello Mahesh 
+
+* functions with multiple parameters :-
+def add(a,b):
+print (a + b)
+
+add (10 , 20 )
+
+output:- 30 
+
+* Return paramters :-
+The return keyword sends a value back from the function 
+
+def square(num):
+return num *num
+
+result = square(5)
+print(result)
+
+output :25 
+
+Difference between print and return :- 
+
+print :- 1)displays output 
+2) cannot be reused 
+3) ends after printing 
+
+return :- 
+1) sends value back 
+2) can be stored 
+3) returns value to caller 
+
+
+* Keywords Arguments :- Arguments can be passed using paramters names 
+
+def student(name , age):
+print(name ,age)
+
+student(age=19  , name="Mahesh")
+
+output : Mahesh  19
+
+
+*  positional Arguments :- 
+Arguements are assigned based on their position 
+
+def student(name ,age):
+print(name ,age)
+
+student("Mahesh", 19 )
+
+* Arbitrary Keyword Arguments :- it accepts multiple keyword arguments 
+
+def details(student):
+    print(student)
+
+details(name="Mahesh" ,age=19 , course="cloud")
+
+output :-
+
+{'name': 'Mahesh', 'age': 19, 'course': 'Cloud'}
+
+* Local variable :- 
+Local variables are defined inside a function and can only be accessed within that function.
+
+def demo():
+x = 10
+print(X)
+
+demo()
+
+* Global variable :- 
+A variable created outside a function. 
+
+x = 100
+
+def demo():
+print(x)
+
+demo()
+
+output:- 100 
+
+
+* lambda function :- 
+A lambda function is a small anonymous fucntion 
+
+syntax :- lambda arguements : expression 
+
+Example :- 
+sqaure =lambda x : x*x
+print(square(5))
+
+output : 25 
+
+* Recursive function :- 
+A function that call itself 
+
+def countdown(n)
+if n == 0:
+    print("Done")
+else:
+    print(n)
+    countdown(n - 1)
+
+countdown(S)
+
+
+output :-  
+5
+4
+3
+2
+1
+Done 
+
+* Build-in-functions :- python provides many built-in functions 
+
+Example :- print(len("python))
+
+output :- 6 
+
+Example :- 
+print(max(10 , 20 , 50 ))
+ 
+output :- 50 
+
+Example :- 
+print(min(10, 20 , 50 ))
+output :- 10 
+
+Example :- print(sum([1,2,3,4]))
+output :- 10 
+
+Example :- print(type(10))
+
+output :- <class 'int'>
+
+
+* Scope :- Scope determines where a variable can be accessed.
+
+x = 100 
+
+def demo():
+    y =20
+    print(x)
+    print(y)
+
+demo()
+
+output :- 100
+           20 
+
+
+* Practice program :- 
+ 
+1 find the square of a number  :-
+def  square(num):
+    return num*num 
+
+print(square(7))
+
+ouput :- 49
+
+2 Find the largest of two numbers 
+
+def largest(a , b):
+    if a > b:
+         return a 
+         return b 
+
+print(largest(15 , 20 ))
+
+
+3 Check Even or odd 
+
+def even_odd(num):
+    if num % 2 == 0:
+        return "Even"
+    return "Odd"
+
+print(even_odd(9))
+
+
+
