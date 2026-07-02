@@ -1967,3 +1967,130 @@ print(even_odd(9))
 
 
 
+DAY - 7 :- File handling 
+
+File handling is a process of creating,opening, reading , appending and deleting files using python. 
+
+Instead of storing data only in memory.python can permanently  save it inside files.
+
+Now we discuss why only file handling ??? 
+Because it stores data permanently , Reads previous data , update existing files ,save logs ,generate reports,store configurations.
+
+* FILE MODES :- 
+r :- Read 
+w :- Write 
+a :- append 
+x :- Create  new file 
+rb :- Read binary 
+wb :- Write binary 
+* Opening a file :- 
+Syntax :- 
+open(filename , mode)
+
+
+Example :- file =open("data.txt" , "r")
+
+
+* Write into file :- 
+
+Example :- file =open("data.txt" , "w")
+file.write("Hello , Mahesh !")
+file.close()
+
+output :- Hello Mahesh 
+
+
+
+* Append into file :-
+file =open("data.txt" , "a")
+file.write("\nLearning python")
+file.close()
+
+output :-Hello mahesh
+Learning python 
+
+* Read line by line :-
+
+Example :-
+file = open("data.txt" , "r")
+print(file.readline())
+file.close()
+
+output :- Hello Mahesh 
+
+
+* Read All lines :- 
+file = open("data.txt", "r")
+print(file.readlines())
+file.close()
+
+output :- ['Hello Mahesh\n', 'Learning python']
+
+* using with statement :- Instead of manually closing files, Python automatically closes them using with.
+
+Example :- 
+with open("data.txt" , "r")as file:
+     print(file.read())
+
+
+* Exception handling :- 
+Exception handling it is a technique used to handle runtime errors without stopping the program.
+
+Instead of crashing.Python executes an alternative block of code.
+
+* Try and except :- 
+try:
+    number =10/0 
+except:
+    print("Cannot divide by zero.")
+
+output :-
+Cannot divide by zero.
+
+*  Catch specific error :-
+try:
+    number = int(input("Enter Number : "))
+except ValueError:
+     print("Please enter only numbers.")
+
+* Mulitple Exceptions :- 
+try:
+    number =int(input())
+    print(100/ number )
+except ValueError:
+    print("Invalid number")
+except ZeroDivisonError:
+    print("Cannot divide by zero")
+
+
+* Else block:- Runs only no exception occurs 
+Example :-
+try :
+    num =int(input())
+except  ValueError:
+    print("Wrong Input")
+else:
+    print("Everything is fine")
+
+
+* Finally block:- Runs whether an exception occurs or not 
+
+Example :- 
+try:
+    print(10/2)
+except:
+    print("Error")
+Finally:
+    print("Program Finished")
+
+Output:- 
+5.0
+Program Finished
+
+* Raise your own exception :-
+age = int(input("Enter your age:"))
+
+if age < 18:
+     raise Exception("  Not Eligble")>
+
+
